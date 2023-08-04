@@ -17,7 +17,7 @@ inputs:
     default: "${{ github.workspace }}/.scons-cache/"
   scons-cache-limit:
     description: The scons cache size limit.
-    # actions/cache has 10 GiB limit, and GitHub runners have a 14 GiB disk.
+    ## actions/cache has 10 GiB limit, and GitHub runners have a 14 GiB disk.
     # Limit to 7 GiB to avoid having the extracted cache fill the disk.
     default: 7168
 runs:
